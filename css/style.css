@@ -1,0 +1,380 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+ @import url('https://fonts.googleapis.com/css?family=Pacifico');
+ @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+ * {
+  font-family: 'Lato', sans-serif;
+ }
+ body{
+   overflow-x: hidden;
+ }
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+a{
+  color: #adbf9f;
+  cursor: pointer;
+}
+
+.fullscreen{
+  height: 100vh;
+  width: 100vw;
+}
+
+.active-menu{
+  color: red;
+}
+.no-pad-bot{
+  padding: 0;
+}
+.pacifico{
+  font-family: 'Pacifico', cursive;
+  font-size: 29px;
+  color: #5eb41b;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+#tab { display:inline-block; 
+  margin:0 .5rem 0 .5rem; }
+
+.mynav{
+  font-size: 25px;
+  color: #adbf9f !important;
+  font-weight: 100;
+  z-index: 2;
+}
+.active-nav{
+  color: #fd0036;
+
+}
+
+.active-nav::after{
+  display: inline-block;
+  content: "";
+  border-top: .2rem solid #34690a;
+  width: 15rem;
+  margin-left: -15rem;
+  margin-bottom: -1rem;
+}
+
+.icon-block {
+  padding: 0 15px;
+      /* margin: 0 auto; */
+      display: flex;
+      flex-direction: column;
+      /* justify-content: stretch; */
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+  background-image: url('../images/footer_image.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+.border
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.flower-right{
+  position: absolute;
+  width: 15%;
+  right: 0;
+  top: 0;
+}
+.flower-left{
+  position: absolute;
+  width: 10%;
+  left: 0;
+  bottom: 0;
+
+}
+.bor{
+  position: absolute;
+  left: 0;
+  top: 0;
+ z-index: 1;
+  width: 100vw;
+}
+.banner-sec{
+  background-image: url(../images/seed-bg.png);
+  background-position: center;background-size: cover;
+  background-repeat: no-repeat;
+}
+/* who we are */
+.who{
+  padding-top: 100px;
+  margin-top: -30px;
+  margin-bottom: 0;
+  padding-bottom: 100px;
+}
+.who-sec{
+  background-image: url(../images/what-bg.png);
+  background-position: center;background-size: cover;
+  background-repeat: no-repeat;
+}
+.who-sec  .active-nav::after{
+  width: 13rem !important;
+  margin-left: -12rem;
+  margin-bottom: -1rem;
+
+}
+.who-sec h5{
+  margin-top: 60px;
+  }
+.who-sec p{
+margin-top: 20px;
+}
+.who .border{
+  
+  border: solid 1.5px red;
+  padding: 2rem;
+
+}
+.who .h6{
+  color: #adbf9f;
+}
+.who .content{
+  background-color: rgba(249, 249, 249, 0.63);
+
+  padding: 50px;
+}
+.vertical{
+  position: relative;
+}
+hr{
+  box-sizing: content-box;
+  height: 40vh;
+  color: red;
+  background-color: red;
+  border: none;
+  right: 0;
+}
+.vcircle1{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  color: red;
+  right: 22.15vw;
+}
+.vcircle2{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  color: red;
+  right: 22.15vw;
+  top:40vh;
+}
+.line{
+  margin-left: 45vw;
+}
+.vertical{
+  position: absolute;
+}
+.social{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* margin-left: 22vw; */
+  right: 21.05vw;
+  top: 10vh;
+  z-index: 141;
+}
+.social img{
+  width: 80%;
+  /* height: auto; */
+  /* margin-top: 32px; */
+  margin: 4px;;
+ 
+}
+.cir-bg{
+  background-color: white;
+  width: 40px;
+  /* background-color: #0e0e0e; */
+  padding: 3px;
+  border-radius: 50%;
+  height: 40px;
+  margin-top: 10px;
+}
+.vtext{
+    transform: rotate(270deg);
+    font-size: 23px;
+    color: red;
+
+}
+
+
+/* what section */
+.what-sec{
+  background-image: url(../images/what-bg.png);
+  background-position: center;background-size: cover;
+  background-repeat: no-repeat; background-size: cover;
+}
+.what-cont{
+  padding: 300px 0px 160px 0;
+}
+.what-sec h5{
+  font-size: 25px;
+  margin-bottom:10px; 
+}
+.content{
+  padding: 10px 30px;
+}
+
+.what-sec h6{
+  color: #adbf9f;
+}
+.what-seed h4{
+  padding-left: 27px;
+}
+.what-sec  .active-nav::after{
+  width: 17rem !important;
+  margin-left: -17rem !important;
+  margin-bottom: -1rem;
+
+}
+
+/* why section */
+.why-sec{
+  background-image: url(../images/seed-bg.png);
+  background-size: cover;
+  
+}
+.why-sec h4{
+  padding-top:100px;
+}
+
+.card-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 75px  0 200px 0;
+
+}
+.circle{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+box-shadow: 2px 4px 10px 0px #b9e69c80;
+margin-bottom: 60px;
+}
+.circle img{
+  width: 60%;
+  margin: 0 auto;
+}
+.card-panel h5{
+  margin-bottom:30px;
+}
+.card-t1::after{
+  display: inline-block;
+  content: "";
+  border-top: .2rem solid #fd0c3f;
+  width: 2rem;
+  margin-left: -11.2rem;
+  margin-bottom: -1rem;
+}
+.card-t2::after{
+  display: inline-block;
+  content: "";
+  border-top: .2rem solid #fd0c3f;
+  width: 2rem;
+  margin-left: -10rem;
+  margin-bottom: -1rem;
+}
+.card-t3::after{
+  display: inline-block;
+  content: "";
+  border-top: .2rem solid #fd0c3f;
+  width: 2rem;
+  margin-left: -6rem;
+  margin-bottom: -1rem;
+}
+
+.card-text{
+  font-size: 18px;
+  color: #acb9a2;
+  margin-top: 15px;
+}
+.card-panel{
+  padding: 75px 50px;
+  box-shadow: 0 0 20px 0px #c1c6bdb8;
+}
+
+
+/* how section */
+.how-sec{
+  background-color:#feebef;
+}
+.how-sec .mynav{
+  margin-top: 60px;
+}
+.how{
+  display: flex;
+  justify-content: space-around;
+  margin:150px 0 250px 0;
+}
+.step_icons{
+  width: 30%;
+  margin: 0 auto;
+}
+.soil{
+  width: 48%;
+  margin: 0 auto;
+}
+.seed{
+  width: 43%;
+  margin:0 auto;
+}
+.plant{
+  width: 24%;
+  margin: 0 auto;
+}
+
+.step-text{
+  font-size: 16px;
+  line-height: 21px;
+}
+/* footer */
+.footer-cont{
+  margin-top: 150px;
+
+
+}
