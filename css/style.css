@@ -43,7 +43,7 @@ a{
 }
 .pacifico{
   font-family: 'Pacifico', cursive;
-  font-size: 29px;
+  font-size: 25px;
   color: #5eb41b;
 }
 
@@ -66,7 +66,7 @@ a{
   margin:0 .5rem 0 .5rem; }
 
 .mynav{
-  font-size: 25px;
+  font-size: 20px;
   color: #adbf9f !important;
   font-weight: 100;
   z-index: 2;
@@ -80,8 +80,8 @@ a{
   display: inline-block;
   content: "";
   border-top: .2rem solid #34690a;
-  width: 15rem;
-  margin-left: -15rem;
+  width: 12rem;
+  margin-left: -12rem;
   margin-bottom: -1rem;
 }
 
@@ -114,28 +114,62 @@ footer.page-footer {
 }
 .flower-right{
   position: absolute;
-  width: 15%;
+  width: 20%;
   right: 0;
   top: 0;
+  z-index: 2;
 }
 .flower-left{
   position: absolute;
-  width: 10%;
+  width: 18%;
   left: 0;
-  bottom: 0;
-
+  bottom: -27vh;
+  z-index: 2;
 }
 .bor{
   position: absolute;
+  margin-left: auto;
+  margin-right: auto;
   left: 0;
-  top: 0;
+  right: 0;
  z-index: 1;
-  width: 100vw;
+  width: 70vw;
 }
 .banner-sec{
   background-image: url(../images/seed-bg.png);
   background-position: center;background-size: cover;
   background-repeat: no-repeat;
+}
+.banner-sec .mynav{
+  position: relative;
+  top: 15vh;
+}
+.heart{
+  background-color: #fff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  /* box-shadow: 0 0 15px 0px #b6c5a9; */
+  position: relative;
+  top: 25vh; 
+  z-index: 2;
+}
+.heart::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  /* background: url(../images/enquiryIcon.svg) center no-repeat; */
+  /* background-size: 54px 54px; */
+  display: block;
+  -webkit-animation: ripple 1.5s ease-in-out infinite;
+  animation: ripple 1.5s linear infinite;
+  border: 10px solid rgba(0,0,0,0.25);
+  /* box-shadow: 0 6px 10px 2px rgba(0,0,0,0.1); */
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 /* who we are */
 .who{
@@ -150,16 +184,27 @@ footer.page-footer {
   background-repeat: no-repeat;
 }
 .who-sec  .active-nav::after{
-  width: 13rem !important;
-  margin-left: -12rem;
+  width: 9rem !important;
+  margin-left: -9rem;
   margin-bottom: -1rem;
 
 }
 .who-sec h5{
   margin-top: 60px;
   }
+  .who-sec h6{
+    font-size: 13px;
+  color: #adbf9f !important;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-top: 5px;
+    }
+
 .who-sec p{
 margin-top: 20px;
+
+font-size: 13px;
+line-height: 20px;
 }
 .who .border{
   
@@ -171,7 +216,7 @@ margin-top: 20px;
   color: #adbf9f;
 }
 .who .content{
-  background-color: rgba(249, 249, 249, 0.63);
+  background-color: rgba(250, 2450, 250, 0.90);
 
   padding: 50px;
 }
@@ -192,7 +237,7 @@ hr{
   height: 10px;
   border-radius: 50%;
   color: red;
-  right: 22.15vw;
+  right:19.65vw;
 }
 .vcircle2{
   position: absolute;
@@ -200,11 +245,11 @@ hr{
   height: 10px;
   border-radius: 50%;
   color: red;
-  right: 22.15vw;
+  right: 19.65vw;
   top:40vh;
 }
 .line{
-  margin-left: 45vw;
+  margin-left: 40vw;
 }
 .vertical{
   position: absolute;
@@ -214,7 +259,7 @@ hr{
   flex-direction: column;
   position: absolute;
   /* margin-left: 22vw; */
-  right: 21.05vw;
+  right: 18.5vw;
   top: 10vh;
   z-index: 141;
 }
@@ -236,24 +281,33 @@ hr{
 }
 .vtext{
     transform: rotate(270deg);
-    font-size: 23px;
+    transform: rotate(270deg);
+    font-size: 18px;
     color: red;
+    padding-left: 26px;
 
 }
 
 
 /* what section */
 .what-sec{
-  background-image: url(../images/what-bg.png);
+  background: linear-gradient(135deg, rgba(253,221,228,1) 0%, rgba(255,255,255,0.87) 42%, rgba(255,255,255,0.68) 100%);
   background-position: center;background-size: cover;
   background-repeat: no-repeat; background-size: cover;
 }
 .what-cont{
-  padding: 300px 0px 160px 0;
+  padding: 300px 0px 200px 0;
 }
 .what-sec h5{
   font-size: 25px;
   margin-bottom:10px; 
+}
+.what-sec h6{
+  font-size: 13px;
+  color: #adbf9f !important;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-top: 5px;
 }
 .content{
   padding: 10px 30px;
@@ -266,12 +320,27 @@ hr{
   padding-left: 27px;
 }
 .what-sec  .active-nav::after{
-  width: 17rem !important;
-  margin-left: -17rem !important;
+  width: 14rem !important;
+  margin-left: -14rem !important;
   margin-bottom: -1rem;
 
 }
+.what-sec p{
+  
+font-size: 13px;
+line-height: 20px;
+}
+.side-flower{
+  position: relative;
+  width: 100%;
 
+}
+.side-flower img{
+  width: 41%;
+  position: absolute;
+  right: 0;
+  bottom: -28vh;
+}
 /* why section */
 .why-sec{
   background-image: url(../images/seed-bg.png);
@@ -279,14 +348,14 @@ hr{
   
 }
 .why-sec h4{
-  padding-top:100px;
+  padding-top:200px;
 }
 
 .card-cont{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 75px  0 200px 0;
+  margin: 90px 0 200px 0;
 
 }
 .circle{
@@ -307,29 +376,29 @@ margin-bottom: 60px;
   display: inline-block;
   content: "";
   border-top: .2rem solid #fd0c3f;
-  width: 2rem;
-  margin-left: -11.2rem;
+  width: 1.9rem;
+  margin-left: -10rem;
   margin-bottom: -1rem;
 }
 .card-t2::after{
   display: inline-block;
   content: "";
   border-top: .2rem solid #fd0c3f;
-  width: 2rem;
-  margin-left: -10rem;
+  width: 1.9rem;
+  margin-left: -8.5rem;
   margin-bottom: -1rem;
 }
 .card-t3::after{
   display: inline-block;
   content: "";
   border-top: .2rem solid #fd0c3f;
-  width: 2rem;
-  margin-left: -6rem;
+  width: 1.9rem;
+  margin-left: -5rem;
   margin-bottom: -1rem;
 }
 
 .card-text{
-  font-size: 18px;
+  font-size: 13px;
   color: #acb9a2;
   margin-top: 15px;
 }
@@ -367,6 +436,16 @@ margin-bottom: 60px;
   width: 24%;
   margin: 0 auto;
 }
+.how-sec h5{
+  color: #fd0036;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.how-sec .step-text{
+  color: #44151d;
+  font-size: 12px;
+
+}
 
 .step-text{
   font-size: 16px;
@@ -377,4 +456,30 @@ margin-bottom: 60px;
   margin-top: 150px;
 
 
+}
+
+
+@-webkit-keyframes ripple {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+ @keyframes ripple {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
 }
