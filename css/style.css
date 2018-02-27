@@ -121,7 +121,7 @@ footer.page-footer {
 }
 .flower-left{
   position: absolute;
-  width: 18%;
+  width: 14%;
   left: 0;
   bottom: -27vh;
   z-index: 2;
@@ -133,7 +133,7 @@ footer.page-footer {
   left: 0;
   right: 0;
  z-index: 1;
-  width: 70vw;
+  width: 80vw;
 }
 .banner-sec{
   background-image: url(../images/seed-bg.png);
@@ -150,9 +150,13 @@ footer.page-footer {
   width: 80px;
   height: 80px;
   /* box-shadow: 0 0 15px 0px #b6c5a9; */
-  position: relative;
-  top: 25vh; 
-  z-index: 2;
+  position: absolute;
+  bottom: 6vh;
+  z-index: 12;
+  
+}
+.heart img{
+  margin: 0 auto;
 }
 .heart::after{
   content: "";
@@ -163,13 +167,13 @@ footer.page-footer {
   display: block;
   -webkit-animation: ripple 1.5s ease-in-out infinite;
   animation: ripple 1.5s linear infinite;
-  border: 10px solid rgba(0,0,0,0.25);
+  border: 10px solid rgba(244, 103, 124, 0.23);
   /* box-shadow: 0 6px 10px 2px rgba(0,0,0,0.1); */
   border-radius: 50%;
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: -1;
 }
 /* who we are */
 .who{
@@ -332,13 +336,14 @@ line-height: 20px;
 }
 .side-flower{
   position: relative;
-  width: 100%;
+  width: 80%;
+  padding-left:200px; 
 
 }
 .side-flower img{
   width: 41%;
   position: absolute;
-  right: 0;
+  right: -20vw;
   bottom: -28vh;
 }
 /* why section */
@@ -430,7 +435,7 @@ margin-bottom: 60px;
 }
 .seed{
   width: 43%;
-  margin:0 auto;
+  margin-left: 74px;
 }
 .plant{
   width: 24%;
@@ -439,14 +444,20 @@ margin-bottom: 60px;
 .how-sec h5{
   color: #fd0036;
   font-size: 18px;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 .how-sec .step-text{
   color: #44151d;
   font-size: 12px;
 
 }
-
+.sun{
+  width: 20%;
+  position: relative;
+  right: -8vw;
+  /* top: 3px; */
+  margin-top: -43px;
+}
 .step-text{
   font-size: 16px;
   line-height: 21px;
